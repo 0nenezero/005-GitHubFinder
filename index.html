@@ -27,9 +27,14 @@
         <section id="search-cont">
           <h2 class="sr-only">사용자 검색하기</h2>
           <p class="descript-txt">검색할 사용자 이름을 입력하세요</p>
-          <label for="username">사용자 이름: </label>
-          <input type="text" id="username" />
-          <button type="button">검색하기</button>
+          <form class="search-form">
+            <label for="username" class="sr-only">사용자 이름</label>
+            <input type="text" id="username" />
+            <button type="button" class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span class="sr-only">검색</span>
+            </button>
+          </form>
         </section>
         <section id="result-cont">
           <h2 class="sr-only">검색 결과</h2>
