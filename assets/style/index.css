@@ -1,0 +1,97 @@
+@import "./common.css";
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: gainsboro;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  width: 80%;
+  height: 80%;
+  border-radius: 0.6rem;
+  overflow: scroll;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* header */
+header {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0.4rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+.deco-cont {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  * {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+  }
+
+  .r {
+    background-color: #fe5f57;
+  }
+  .y {
+    background-color: #febc2e;
+  }
+  .g {
+    background-color: #28c841;
+  }
+}
+
+/* main */
+main {
+  margin-bottom: auto;
+  height: 3000px;
+  padding: 2rem;
+}
+
+.search-cont {
+  border: 1px solid red;
+
+  .descript-txt {
+    font-size: 2.4rem;
+    line-height: 1.6;
+  }
+
+  #username {
+    width: 100%;
+  }
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+
+  .github-link {
+    position: relative;
+    z-index: 5;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

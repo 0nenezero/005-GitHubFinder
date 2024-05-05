@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="deco-cont">
+          <div class="r"></div>
+          <div class="y"></div>
+          <div class="g"></div>
+        </div>
+        <h1>GitHub Finder</h1>
+      </header>
+      <main>
+        <section class="search-cont">
+          <h2 class="sr-only">사용자 검색하기</h2>
+          <p class="descript-txt">검색할 사용자 이름을 입력하세요</p>
+          <label for="username">사용자 이름: </label>
+          <input type="text" id="username" />
+          <button type="button">검색하기</button>
+        </section>
+        <section id="result-cont">
+          <h2 class="sr-only">검색 결과</h2>
+          <ul class="user-list">
+            <li>
+              <div class="profile">
+                <figure>
+                  <img
+                    src="https://avatars.githubusercontent.com/u/56082032?v=4"
+                    alt="user-profile"
+                  />
+                  <figcaption>
+                    <a href="#" target="_blanks">View Profile</a>
+                  </figcaption>
+                </figure>
+                <ul class="tag">
+                  <li>Public Repos</li>
+                  <li>Public Gists</li>
+                  <li>Followers</li>
+                  <li>Following</li>
+                </ul>
+                <ul class="info">
+                  <li>Company</li>
+                  <li>Website/Blog</li>
+                  <li>Location</li>
+                  <li>Member Since</li>
+                </ul>
+              </div>
+              <div class="repository">
+                <p>Latest Repos</p>
+                <ul class="repo-list">
+                  <li>
+                    <p class="title">타이틀</p>
+                    <ul class="tag">
+                      <li>Stars</li>
+                      <li>Watchers</li>
+                      <li>Forks: undefined</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <small
+          >Copyright 2024.
+          <a
+            href="https://github.com/0nenezero"
+            target="_blank"
+            class="github-link"
+            >@0nenezero</a
+          >
+          all rights reserved.
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
